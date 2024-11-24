@@ -19,6 +19,7 @@ export class AppComponent {
 
   transformNumber(): void {
     if (this.inputNumber === null || this.inputNumber < 0 || this.inputNumber > 100) {
+      this.resetInput();
       this.errorMessage = 'Veuillez entrer un nombre entre 0 et 100.';
       return;
     }
